@@ -17,9 +17,13 @@ export function PageButton({text, link}){
         <button >
             <a href={link} 
                 style={{
-                    "text-decoration":"none",
+                    "textDecoration":"none",
                     "color":"black",
-                    "fontSize":"20px",    }}
+                    "fontSize":"20px",   
+                    "fontWeight":"bold",
+                    "fontFamily":"Abril Fat face",
+                    "lineHeight":"29px",
+                }}
             >
             {text}
             </a>
