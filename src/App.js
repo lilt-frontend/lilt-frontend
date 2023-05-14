@@ -1,15 +1,16 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Router, Routes } from 'react-router-dom';
 import Main from './main';
 
 function App() {
   return (
     <>
-    <Main />
-				{/* <Routes>
-					<Route path="/" element={<Main />}></Route>
-				</Routes>     */}
-        </>
+				{/* <Router> */}
+          <Routes>
+  					<Route path="/" element={<Main/>}></Route>
+  				</Routes>    
+        {/* </Router> */}
+      </>
   );
 }
 

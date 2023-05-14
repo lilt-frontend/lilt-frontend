@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from '@remix-run/router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const history = createMemoryHistory();
 root.render(
   <React.StrictMode>
-    <App />
+    <Router location={history.location} navigator={history}>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
